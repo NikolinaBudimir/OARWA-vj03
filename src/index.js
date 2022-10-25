@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
 const poruke = [
   {
@@ -21,19 +22,8 @@ const poruke = [
     vazno: true
   }
 ]
-const App = (props) => {
-  const { poruke } = props
 
-  return (
-    <div>
-      <h1>Poruke</h1>
-      <ul>
-        <li>{poruke[0].sadrzaj}</li>
-        <li>{poruke[1].sadrzaj}</li>
-        <li>{poruke[2].sadrzaj}</li>
-      </ul>
-    </div>
-  )
-}
+
+
 
 ReactDOM.render(<App poruke={poruke} />,document.getElementById('root'))
